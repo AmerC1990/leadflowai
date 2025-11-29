@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main className="bg-white text-gray-900">
       
-      {/* Hero */}
+      {/* Hero Section */}
       <section className="px-6 py-24 max-w-6xl mx-auto text-center">
         <h1 className="text-5xl font-bold leading-tight">
           Never Miss Another Hot Lead Again.
@@ -14,29 +14,54 @@ export default function Home() {
         </p>
 
         {/* ConvertKit Form */}
-        <form
-          action="https://app.kit.com/forms/8821754/subscriptions"
-          method="post"
-          className="mt-10 flex justify-center"
-        >
-          <input
-            type="email"
-            name="email_address"
-            required
-            placeholder="Enter your email"
-            className="px-4 py-3 border rounded-l-lg w-64 text-gray-800 border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-          />
-          
-          <button
-            type="submit"
-            className="px-6 py-3 bg-blue-600 text-white font-medium rounded-r-lg hover:bg-blue-700 transition"
+        <div className="mt-10 flex justify-center">
+          {/* Load ConvertKit script */}
+          <script async src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+
+          {/* Actual ConvertKit embedded form */}
+          <form
+            action="https://app.kit.com/forms/8821754/subscriptions"
+            className="seva-form formkit-form"
+            method="post"
+            data-sv-form="8821754"
+            data-uid="b421ad0ba6"
+            data-format="inline"
+            data-version="5"
+            data-options='{"settings":{"after_subscribe":{"action":"message","success_message":"You’re in! We’ll email you when we launch.","redirect_url":""}}}'
           >
-            Join Early Access
-          </button>
-        </form>
+            <div className="seva-fields formkit-fields flex">
+              <input
+                name="email_address"
+                type="email"
+                required
+                placeholder="Enter your email"
+                className="px-4 py-3 border rounded-l-lg w-64 text-gray-800 border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              />
+
+              <button
+                type="submit"
+                className="px-6 py-3 bg-blue-600 text-white font-medium rounded-r-lg hover:bg-blue-700 transition"
+              >
+                Join Early Access
+              </button>
+            </div>
+
+            {/* Inline success & error message containers */}
+            <ul
+              className="formkit-alert formkit-alert-error"
+              data-element="errors"
+              data-group="alert"
+            ></ul>
+
+            <div
+              className="formkit-alert formkit-alert-success hidden"
+              data-element="success"
+            ></div>
+          </form>
+        </div>
       </section>
 
-      {/* Features */}
+      {/* Features Section */}
       <section id="features" className="py-24 max-w-6xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-center">What LeadFlowAI Does</h2>
 
@@ -64,9 +89,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Footer */}
       <footer className="py-8 text-center text-gray-500 text-sm border-t">
         © {new Date().getFullYear()} LeadFlowAI — All Rights Reserved.
       </footer>
     </main>
   );
 }
+
