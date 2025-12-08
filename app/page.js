@@ -25,29 +25,29 @@ export default function Home() {
       {/* HERO */}
       <section className="px-6 pt-16 pb-20">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+
           {/* Left: Copy + Form */}
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs font-medium mb-6">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-              AI Appointment Setter for Service Businesses
+              AI Treatment Coordinator for Dentists
             </div>
 
             <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
-              Your 24/7 AI closer for leads from ads, DMs & your website.
+              Never Lose Another Invisalign, Implant, or New Patient Lead Again.
             </h1>
 
             <p className="mt-5 text-lg text-slate-300 max-w-xl">
-              LeadFlowAI instantly replies to every new inquiry, asks qualifying
-              questions, follows up automatically, and books appointments right
-              onto your calendar — even while you sleep.
+              LeadFlowAI replies to new patient inquiries in seconds, answers common
+              dental questions, qualifies cases, and books consultations directly onto 
+              your calendar — 24/7, automatically.
             </p>
 
             <p className="mt-4 text-sm text-slate-400">
-              Perfect for: contractors, med spas, realtors, roofers, cleaners,
-              gyms, coaches, and any business that runs on leads.
+              Built for general dentists, cosmetic dentists, implant centers, and ortho practices.
             </p>
 
-            {/* HERO FORM (ConvertKit) */}
+            {/* HERO FORM */}
             <form
               action="https://app.kit.com/forms/8821754/subscriptions"
               method="post"
@@ -69,11 +69,11 @@ export default function Home() {
             </form>
 
             <p className="mt-3 text-xs text-slate-500">
-              No spam. No pitch deck. Just early access when we launch.
+              No spam. No commitment. Just first access when we launch.
             </p>
           </div>
 
-          {/* Right: Visual / Mock UI */}
+          {/* Right: Dentist Chat Mockup */}
           <div className="relative">
             <div className="absolute -top-6 -right-8 h-24 w-24 rounded-full bg-blue-500/20 blur-3xl" />
             <div className="absolute -bottom-10 -left-6 h-24 w-24 rounded-full bg-violet-500/30 blur-3xl" />
@@ -85,7 +85,7 @@ export default function Home() {
                     Live Example
                   </p>
                   <p className="text-sm font-semibold mt-1">
-                    New Lead from Facebook Ad
+                    New Patient Inquiry — Invisalign
                   </p>
                 </div>
                 <span className="px-2 py-1 text-xs rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/40">
@@ -93,38 +93,39 @@ export default function Home() {
                 </span>
               </div>
 
-              {/* Chat bubbles */}
               <div className="space-y-3 text-sm">
+                {/* Patient bubble */}
                 <div className="max-w-[80%] rounded-2xl bg-slate-800 px-3 py-2">
                   <p className="text-slate-100">
-                    Hey, I saw your ad. Do you have availability this week for a
-                    roof inspection?
+                    Hi, I&apos;m interested in Invisalign. Do you offer consultations?
                   </p>
-                  <p className="mt-1 text-[11px] text-slate-400">Lead • 2:14 PM</p>
+                  <p className="mt-1 text-[11px] text-slate-400">Patient • 9:14 AM</p>
                 </div>
 
+                {/* AI bubble */}
                 <div className="max-w-[82%] ml-auto rounded-2xl bg-blue-500 px-3 py-2 shadow-lg">
                   <p className="text-slate-50">
-                    Absolutely! A few quick questions so we can help you faster:
-                    🏠 What city are you in and how urgent is the job?
+                    Absolutely! We&apos;d love to help you. A couple quick questions to
+                    make sure you&apos;re a good candidate: Have you had orthodontic
+                    treatment before?
                   </p>
                   <p className="mt-1 text-[11px] text-blue-100">
                     LeadFlowAI • replying in 4 seconds
                   </p>
                 </div>
 
+                {/* Patient */}
                 <div className="max-w-[78%] rounded-2xl bg-slate-800 px-3 py-2">
-                  <p className="text-slate-100">
-                    Greensboro, not super urgent but this week would be perfect.
-                  </p>
+                  <p className="text-slate-100">Nope, this would be my first time.</p>
                 </div>
 
+                {/* AI */}
                 <div className="max-w-[84%] ml-auto rounded-2xl bg-blue-500 px-3 py-2 shadow-lg">
                   <p className="text-slate-50">
-                    Got it. We can fit you in on{" "}
-                    <span className="font-semibold">Wednesday at 3 PM</span> or{" "}
-                    <span className="font-semibold">Thursday at 11 AM</span>. Which
-                    works better for you?
+                    Great! We have{" "}
+                    <span className="font-semibold">Wednesday at 2 PM</span> or{" "}
+                    <span className="font-semibold">Thursday at 10 AM</span> available for Invisalign consultations.
+                    Which works better for you?
                   </p>
                 </div>
               </div>
@@ -136,7 +137,7 @@ export default function Home() {
                     NEXT SLOT BOOKED
                   </p>
                   <p className="text-sm font-semibold mt-1">
-                    Thu • 11:00 AM — Roof Inspection
+                    Thu • 10:00 AM — Invisalign Consultation
                   </p>
                 </div>
                 <div className="px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-xs text-slate-200">
@@ -148,21 +149,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PAIN / BEFORE-AFTER SECTION */}
+      {/* PAIN SECTION */}
       <section className="bg-slate-900 border-y border-slate-800 px-6 py-16">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold">
-              Right now, you&apos;re leaking money every time you miss a lead.
+              Your practice is losing thousands every time a patient lead gets ignored.
             </h2>
             <p className="mt-4 text-sm text-slate-300">
-              Most service businesses lose 50–80% of leads simply because:
+              Most dental practices lose 40–70% of leads because:
             </p>
             <ul className="mt-4 space-y-2 text-sm text-slate-300">
-              <li>• You can&apos;t respond in under 5 minutes 24/7.</li>
-              <li>• You&apos;re driving, in appointments, or with family.</li>
-              <li>• You mean to follow up… but messages get buried.</li>
-              <li>• No one owns “lead nurturing” in your business.</li>
+              <li>• The front desk is overwhelmed.</li>
+              <li>• Patients message after hours and get no response.</li>
+              <li>• No one follows up when patients stop replying.</li>
+              <li>• High-value cases (Invisalign, implants) book elsewhere.</li>
             </ul>
           </div>
 
@@ -172,8 +173,8 @@ export default function Home() {
                 Before LeadFlowAI
               </p>
               <p className="mt-2 text-sm text-slate-200">
-                A lead fills out your form or replies to your ad. You see it an
-                hour later. They already booked with someone else.
+                A patient reaches out about Invisalign or implants. You see it hours 
+                later. They already booked with another practice.
               </p>
             </div>
             <div className="p-4 rounded-2xl bg-slate-950 border border-emerald-500/40">
@@ -181,9 +182,9 @@ export default function Home() {
                 After LeadFlowAI
               </p>
               <p className="mt-2 text-sm text-slate-200">
-                LeadFlowAI replies in seconds, asks the right questions, handles
-                basic objections, follows up automatically, and books them into an
-                open slot on your calendar.
+                LeadFlowAI replies instantly, answers questions, qualifies the case,
+                follows up automatically, and books the patient directly into your 
+                consultation calendar.
               </p>
             </div>
           </div>
@@ -197,8 +198,8 @@ export default function Home() {
             How LeadFlowAI Works
           </h2>
           <p className="mt-3 text-sm text-slate-300 text-center max-w-2xl mx-auto">
-            No complex setup. No custom scripts. You hook it into your lead
-            sources and calendar — LeadFlowAI does the rest.
+            No complex setup. No scripts. Connect your lead sources and calendar —
+            LeadFlowAI handles everything automatically.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 mt-14">
@@ -207,11 +208,11 @@ export default function Home() {
                 1
               </div>
               <h3 className="text-lg font-semibold mb-2">
-                Connect your lead sources
+                Connect your patient lead sources
               </h3>
               <p className="text-sm text-slate-300">
-                Hook LeadFlowAI into forms, SMS, email, and social DMs where new
-                leads come in from ads and your website.
+                Hook LeadFlowAI into forms, SMS, email, and DMs where new patient
+                leads come from ads and your website.
               </p>
             </div>
 
@@ -220,11 +221,10 @@ export default function Home() {
                 2
               </div>
               <h3 className="text-lg font-semibold mb-2">
-                Let AI qualify & follow up
+                AI qualifies the patient & follows up
               </h3>
               <p className="text-sm text-slate-300">
-                Leads get instant responses, smart questions, and automatic follow
-                up so no one &quot;forgets to reply&quot; ever again.
+                LeadFlowAI asks the right questions, answers FAQs, and handles follow-up so no patient slips through the cracks.
               </p>
             </div>
 
@@ -233,68 +233,67 @@ export default function Home() {
                 3
               </div>
               <h3 className="text-lg font-semibold mb-2">
-                Calls & appointments appear on your calendar
+                Consultations appear on your calendar
               </h3>
               <p className="text-sm text-slate-300">
-                When a lead is ready, LeadFlowAI books them directly into your
-                available time slots. You just show up and close.
+                LeadFlowAI books Invisalign, implant, and cosmetic consults directly
+                into your available time slots.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* “WHO IT’S FOR” / POSITIONING */}
+      {/* WHO IT'S FOR */}
       <section className="bg-slate-900 border-y border-slate-800 px-6 py-16">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-center">
-            Built for owners who don&apos;t have time to chase every lead.
+            Built for Dental Practices That Rely on Patient Leads.
           </h2>
           <p className="mt-4 text-sm text-slate-300 text-center max-w-2xl mx-auto">
-            If you&apos;re running a service business and you&apos;re tired of
-            leads slipping through the cracks, LeadFlowAI is for you.
+            If your front desk is overwhelmed and high-value cases slip away, 
+            LeadFlowAI was built for your practice.
           </p>
 
           <div className="grid sm:grid-cols-3 gap-6 mt-10 text-sm text-slate-200">
             <div className="p-4 rounded-2xl bg-slate-950/70 border border-slate-800">
-              <p className="font-semibold mb-1">Home Services</p>
+              <p className="font-semibold mb-1">General Dentists</p>
               <p className="text-slate-300 text-xs">
-                Roofers, cleaners, HVAC, plumbers, landscapers, painters, and
-                more.
+                New patients, emergencies, cleanings, crowns, fillings.
               </p>
             </div>
+
             <div className="p-4 rounded-2xl bg-slate-950/70 border border-slate-800">
-              <p className="font-semibold mb-1">Local Clinics & Med Spas</p>
+              <p className="font-semibold mb-1">Cosmetic Dentists</p>
               <p className="text-slate-300 text-xs">
-                Med spas, chiropractors, dentists, wellness clinics, etc.
+                Veneers, whitening, bonding, smile design.
               </p>
             </div>
+
             <div className="p-4 rounded-2xl bg-slate-950/70 border border-slate-800">
-              <p className="font-semibold mb-1">Coaches & High-Ticket Offers</p>
+              <p className="font-semibold mb-1">Implant & Ortho Practices</p>
               <p className="text-slate-300 text-xs">
-                Coaching, agencies, and consultants running paid traffic.
+                Invisalign, implants, full arch, aligners, braces.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FINAL CTA SECTION */}
+      {/* FINAL CTA */}
       <section
         id="cta"
         className="px-6 py-20 bg-gradient-to-br from-blue-600 via-violet-600 to-slate-900"
       >
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-extrabold leading-tight">
-            Turn more leads into booked appointments — automatically.
+            Turn more patient inquiries into booked consultations — automatically.
           </h2>
           <p className="mt-4 text-sm text-slate-100 max-w-xl mx-auto">
-            Join the early access list and be among the first to use LeadFlowAI
-            when it launches. We&apos;re onboarding a small group of{" "}
-            <span className="font-semibold">service businesses</span> to start.
+            Join the early access list. We're onboarding a small group of{" "}
+            <span className="font-semibold">dental practices</span> for launch.
           </p>
 
-          {/* CTA FORM (ConvertKit again) */}
           <form
             action="https://app.kit.com/forms/8821754/subscriptions"
             method="post"
@@ -316,8 +315,7 @@ export default function Home() {
           </form>
 
           <p className="mt-3 text-[11px] text-slate-100/80">
-            No credit card. No obligation. Just first access when we&apos;re
-            live.
+            No credit card. No obligation. Just first access when we go live.
           </p>
         </div>
       </section>
@@ -329,3 +327,4 @@ export default function Home() {
     </main>
   );
 }
+
