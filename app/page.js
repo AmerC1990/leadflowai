@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "FlowLeadPro — AI Patient Booking for Dentists",
+  title: "FlowLeadPro — AI Patient Booking & Lead Qualification for Dentists",
   description:
     "FlowLeadPro instantly responds to dental patient inquiries, qualifies Invisalign and implant leads, and books consultations automatically — 24/7.",
 };
@@ -12,10 +12,10 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
           <div className="flex items-center gap-2">
             <div className="h-8 w-8 rounded-xl bg-gradient-to-br from-blue-500 to-violet-500 flex items-center justify-center text-xs font-bold">
-              LF
+              FP
             </div>
             <span className="text-lg font-semibold tracking-tight">
-              LeadFlowAI
+              FlowLeadPro
             </span>
           </div>
 
@@ -23,7 +23,7 @@ export default function Home() {
             href="#cta"
             className="hidden sm:inline-flex px-4 py-2 text-sm font-medium rounded-full bg-slate-100 text-slate-900 hover:bg-white transition"
           >
-            Get Early Access
+            Request Private Access
           </a>
         </div>
       </header>
@@ -39,11 +39,11 @@ export default function Home() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
-              Never Lose Another Invisalign, Implant, or New Patient Lead Again.
+              Stop Missing Invisalign, Implant, and New Patient Leads.
             </h1>
 
             <p className="mt-5 text-lg text-slate-300 max-w-xl">
-              LeadFlowAI instantly replies to new patient inquiries, answers common
+              FlowLeadPro instantly replies to new patient inquiries, answers common
               dental questions, qualifies cases, and books consultations directly onto
               your calendar — automatically, 24/7.
             </p>
@@ -69,19 +69,19 @@ export default function Home() {
                 type="email"
                 name="email_address"
                 required
-                placeholder="Enter your work email"
+                placeholder="Practice email"
                 className="px-4 py-3.5 border border-slate-600 bg-slate-900 rounded-lg sm:rounded-r-none w-full text-slate-50 placeholder-slate-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
               />
               <button
                 type="submit"
                 className="px-5 py-3.5 bg-blue-500 text-white font-semibold rounded-lg sm:rounded-l-none hover:bg-blue-600 transition whitespace-nowrap"
               >
-                Reserve Early Access
+                Request Private Access
               </button>
             </form>
 
             <p className="mt-3 text-xs text-slate-500">
-              No spam. No contracts. Just early access for dental practices.
+              No spam. No contracts. Limited onboarding for dental practices.
             </p>
           </div>
 
@@ -141,7 +141,7 @@ export default function Home() {
             Sounds Human. Acts Smart. Always On-Brand.
           </h2>
           <p className="mt-4 text-sm text-slate-300">
-            LeadFlowAI is trained specifically for dental patient conversations.
+            FlowLeadPro is trained specifically for dental patient conversations.
             It answers FAQs, qualifies cases, and follows rules you approve —
             without replacing your front desk.
           </p>
@@ -158,7 +158,7 @@ export default function Home() {
             Turn more patient inquiries into booked consultations.
           </h2>
           <p className="mt-4 text-sm text-slate-100 max-w-xl mx-auto">
-            Join early access for dental practices. Limited onboarding for launch.
+            Request private access for your practice. Limited onboarding available.
           </p>
 
           <form
@@ -170,14 +170,14 @@ export default function Home() {
               type="email"
               name="email_address"
               required
-              placeholder="Enter your work email"
+              placeholder="Practice email"
               className="px-4 py-3.5 border border-white/30 bg-white/10 rounded-lg sm:rounded-r-none w-full text-slate-50 placeholder-slate-200 focus:ring-2 focus:ring-white outline-none"
             />
             <button
               type="submit"
               className="px-5 py-3.5 bg-black text-white font-semibold rounded-lg sm:rounded-l-none hover:bg-slate-900 transition"
             >
-              Join Early Access
+              Request Private Access
             </button>
           </form>
 
@@ -189,7 +189,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="py-6 text-center text-[11px] text-slate-500 border-t border-slate-800 bg-slate-950">
-        © {new Date().getFullYear()} LeadFlowAI. All Rights Reserved.
+        © {new Date().getFullYear()} FlowLeadPro. All Rights Reserved.
       </footer>
     </main>
   );
