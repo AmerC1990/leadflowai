@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "LeadFlowAI — AI Lead Assistant for Dentists",
+  title: "FlowLeadPro — AI Patient Booking for Dentists",
   description:
-    "LeadFlowAI instantly responds to dental patient inquiries, qualifies Invisalign and implant leads, and books consultations automatically — 24/7.",
+    "FlowLeadPro instantly responds to dental patient inquiries, qualifies Invisalign and implant leads, and books consultations automatically — 24/7.",
 };
 
 export default function Home() {
