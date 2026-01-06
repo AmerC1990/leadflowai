@@ -2,12 +2,6 @@
 
 import { useState } from "react";
 
-export const metadata = {
-  title: "FlowLeadPro — AI Patient Booking & Lead Qualification for Dentists",
-  description:
-    "FlowLeadPro instantly responds to dental patient inquiries, qualifies leads, and books consultations automatically — 24/7.",
-};
-
 export default function Home() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
@@ -150,4 +144,3 @@ export default function Home() {
     </main>
   );
 }
-
