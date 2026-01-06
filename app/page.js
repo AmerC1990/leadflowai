@@ -2,12 +2,6 @@
 
 import { useState } from "react";
 
-export const metadata = {
-  title: "FlowLeadPro — AI Patient Booking & Lead Qualification for Dentists",
-  description:
-    "FlowLeadPro instantly responds to dental patient inquiries, qualifies Invisalign and implant leads, and books consultations automatically — 24/7.",
-};
-
 export default function Home() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
@@ -86,7 +80,7 @@ export default function Home() {
               cases, and books consultations directly onto your calendar — 24/7.
             </p>
 
-            {/* FORM / SUCCESS */}
+            {/* FORM */}
             <div className="mt-8 max-w-md">
               {!submitted ? (
                 <form
@@ -111,8 +105,7 @@ export default function Home() {
                 </form>
               ) : (
                 <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/10 px-5 py-4 text-sm text-emerald-200">
-                  ✅ Thanks! We’ve received your request and will reach out
-                  shortly.
+                  ✅ Thanks! We’ll be in touch shortly.
                 </div>
               )}
 
@@ -142,21 +135,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* FINAL CTA */}
-      <section
-        id="cta"
-        className="px-6 py-20 bg-gradient-to-br from-blue-600 via-violet-600 to-slate-900"
-      >
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-extrabold">
-            Turn more patient inquiries into booked consultations.
-          </h2>
-          <p className="mt-4 text-sm text-slate-100">
-            Private onboarding for select dental practices.
-          </p>
         </div>
       </section>
 
