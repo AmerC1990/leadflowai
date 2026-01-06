@@ -65,6 +65,7 @@ export default function Home() {
       {/* HERO */}
       <section className="px-6 pt-16 pb-20">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+          {/* LEFT */}
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs font-medium mb-6">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
@@ -72,12 +73,13 @@ export default function Home() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
-              Stop Missing Invisalign, Implant, and New Patient Leads.
+              Turn More New Patient Inquiries Into Booked Appointments — Automatically
             </h1>
 
             <p className="mt-5 text-lg text-slate-300 max-w-xl">
-              FlowLeadPro instantly replies to new patient inquiries, qualifies
-              cases, and books consultations directly onto your calendar — 24/7.
+              FlowLeadPro instantly responds to new patient inquiries, answers common
+              dental questions, qualifies cases, and books appointments directly onto
+              your calendar — 24/7.
             </p>
 
             {/* FORM */}
