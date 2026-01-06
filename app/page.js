@@ -1,5 +1,11 @@
 "use client";
 
+export const metadata = {
+  title: "FlowLeadPro — AI Patient Booking & Lead Qualification for Dentists",
+  description:
+    "FlowLeadPro instantly responds to dental patient inquiries, qualifies leads, and books consultations automatically — 24/7.",
+};
+
 import { useState } from "react";
 
 export default function Home() {
