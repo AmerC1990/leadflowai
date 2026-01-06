@@ -1,12 +1,12 @@
 "use client";
 
+import { useState } from "react";
+
 export const metadata = {
   title: "FlowLeadPro — AI Patient Booking & Lead Qualification for Dentists",
   description:
     "FlowLeadPro instantly responds to dental patient inquiries, qualifies leads, and books consultations automatically — 24/7.",
 };
-
-import { useState } from "react";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -54,9 +54,7 @@ export default function Home() {
             <div className="h-8 w-8 rounded-xl bg-gradient-to-br from-blue-500 to-violet-500 flex items-center justify-center text-xs font-bold">
               FP
             </div>
-            <span className="text-lg font-semibold tracking-tight">
-              FlowLeadPro
-            </span>
+            <span className="text-lg font-semibold tracking-tight">FlowLeadPro</span>
           </div>
 
           <a
@@ -71,7 +69,6 @@ export default function Home() {
       {/* HERO */}
       <section className="px-6 pt-16 pb-20">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-          {/* LEFT */}
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs font-medium mb-6">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
@@ -133,10 +130,10 @@ export default function Home() {
           <div className="relative">
             <div className="relative rounded-3xl border border-slate-800 bg-slate-900 p-6 shadow-2xl">
               <p className="text-sm font-semibold">
-                New Patient Inquiry — Invisalign
+                New Patient Inquiry — General Dental Question
               </p>
               <p className="mt-3 text-sm text-slate-300">
-                “Hi, I’m interested in Invisalign. Do you offer consultations?”
+                “Hi, I’m having a toothache. Can I book an appointment?”
               </p>
               <p className="mt-3 text-sm text-blue-400">
                 ✔ Automatically replied & booked
@@ -153,3 +150,4 @@ export default function Home() {
     </main>
   );
 }
+
