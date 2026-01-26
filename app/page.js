@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useMemo, useState } from "react";
 
 const GOOGLE_PLAY_URL =
   "https://play.google.com/store/apps/details?id=com.bouzek.machinemonitors";
@@ -31,9 +34,7 @@ function HeaderBrand() {
         <span className="text-xs font-bold">MM</span>
       </div>
       <div className="leading-tight">
-        <div className="text-sm font-semibold text-blue-900">
-          Machine Monitors
-        </div>
+        <div className="text-sm font-semibold text-blue-900">Machine Monitors</div>
         <div className="text-xs text-blue-700">
           Buffered equipment incident capture
         </div>
@@ -43,6 +44,14 @@ function HeaderBrand() {
 }
 
 function PhoneMockup() {
+  const [imgError, setImgError] = useState(false);
+
+  // Cache-buster so deploy/CDN/browser cache can’t keep serving an old/missing file.
+  const src = useMemo(() => {
+    const v = Date.now(); // changes each load
+    return `/app-capture.png?v=${v}`;
+  }, []);
+
   return (
     <div className="relative mx-auto w-full max-w-[420px]">
       {/* glow */}
@@ -55,13 +64,36 @@ function PhoneMockup() {
           <div className="absolute left-1/2 top-2 h-1.5 w-24 -translate-x-1/2 rounded-full bg-neutral-800" />
         </div>
 
-        {/* SCREEN — plain img (bulletproof) */}
+        {/* SCREEN */}
         <div className="relative aspect-[9/19] bg-black">
+          {/* We use <img> so we can reliably use onError/onLoad */}
           <img
-            src="/app-capture.png"
+            src={src}
             alt="Machine Monitors app capture screen"
             className="h-full w-full object-cover"
+            onError={() => setImgError(true)}
+            onLoad={() => setImgError(false)}
           />
+
+          {/* If missing, show a loud helpful overlay */}
+          {imgError ? (
+            <div className="absolute inset-0 flex items-center justify-center p-6">
+              <div className="rounded-2xl bg-white/10 p-5 text-center ring-1 ring-white/15 backdrop-blur">
+                <div className="text-sm font-semibold text-white">
+                  Screenshot not loading
+                </div>
+                <div className="mt-2 text-xs text-white/80">
+                  Expected file at:
+                  <br />
+                  <span className="font-mono text-white">/public/app-capture.png</span>
+                  <br />
+                  Accessible URL:
+                  <br />
+                  <span className="font-mono text-white">/app-capture.png</span>
+                </div>
+              </div>
+            </div>
+          ) : null}
         </div>
 
         {/* bottom */}
@@ -88,7 +120,6 @@ export default function Page() {
 
       {/* HERO */}
       <section className="relative overflow-hidden">
-        {/* background */}
         <div className="absolute inset-0">
           <Image
             src="/hero-factory.jpg"
@@ -103,7 +134,6 @@ export default function Page() {
 
         <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
           <div className="grid items-center gap-10 lg:grid-cols-12">
-            {/* LEFT */}
             <div className="lg:col-span-7 text-white">
               <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-medium ring-1 ring-white/10">
                 Android • Industrial & retail environments
@@ -143,7 +173,6 @@ export default function Page() {
               </div>
             </div>
 
-            {/* RIGHT — BIG GRAPHIC */}
             <div className="lg:col-span-5">
               <PhoneMockup />
             </div>
