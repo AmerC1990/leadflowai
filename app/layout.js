@@ -1,18 +1,16 @@
 // app/layout.js
-import './globals.css'; // <-- Make sure you import your globals.css here
+import "./globals.css";
 
 export const metadata = {
-  title: "FlowLeadPro — AI Patient Booking & Lead Qualification for Dentists",
+  title: "Machine Monitors — Capture Equipment Faults Instantly",
   description:
-    "FlowLeadPro instantly responds to dental patient inquiries, qualifies leads, and books consultations automatically — 24/7.",
+    "Machine Monitors continuously buffers live video so production teams can record equipment faults with one tap and share clips with maintenance or technical support—no editing required.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="antialiased bg-slate-950 text-slate-50">
-        {children}
-      </body>
+      <body className="antialiased bg-slate-950 text-slate-50">{children}</body>
     </html>
   );
 }
